@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "9337eedd-e6a8-4c94-9435-f9b979fade13",
+		"name": "Profile-Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"divya\",\r\n    \"lastName\": \"bhanu123\",\r\n    \"dob\": \"1994-04-20\",\r\n    \"city\": \"mysore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profiles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"divya\",\r\n    \"lastName\": \"bhanu\",\r\n    \"dob\": \"2016-06-03T10:34\",\r\n    \"city\": \"bangalore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profile by last name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"divya\",\r\n    \"lastName\": \"bhanu\",\r\n    \"dob\": \"2016-06-03T10:34\",\r\n    \"city\": \"bangalore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles/bHAnu123",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"bHAnu123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profile by dob",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"divya\",\r\n    \"lastName\": \"bhanu\",\r\n    \"dob\": \"2016-06-03T10:34\",\r\n    \"city\": \"bangalore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles/dob/1994-04-20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"dob",
+						"1994-04-20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get profile by last name and dob",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"firstName\": \"divya\",\r\n    \"lastName\": \"bhanu\",\r\n    \"dob\": \"2016-06-03T10:34\",\r\n    \"city\": \"bangalore\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/profiles/bhaNu123/1994-04-20",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"profiles",
+						"bhaNu123",
+						"1994-04-20"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
